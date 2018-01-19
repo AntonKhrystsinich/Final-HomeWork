@@ -1,3 +1,4 @@
+// Button to top
 $(function() {
     $('.contact-us__up--btn').on('click', function (event) {
         event.preventDefault();
@@ -7,6 +8,7 @@ $(function() {
     });
 });
 
+// Animation
 function animate(elem) {
     var effect = elem.data('effect');
     elem.addClass('animated ' + effect).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend', function () {
