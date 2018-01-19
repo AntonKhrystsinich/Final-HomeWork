@@ -1,0 +1,80 @@
+/* ----- SERVICES ----- */
+
+.services
+  padding-top: 44px
+  padding-bottom: 82px
+
+.services__items
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 225px
+
+.services__item
+  width: 255px
+  text-align: center
+  h3
+    font-size: 18px
+    color: #3a3f4b
+    text-transform: uppercase
+    position: relative
+  p
+    margin-top: 30px
+    font-size: 12px
+    line-height: 20px
+    font-weight: 300
+    color: #999999
+  &:last-child
+    margin-right: 0
+
+.services__subtitle
+  position: relative
+  margin-bottom: 26px
+  text-align: center
+  text-transform: uppercase
+  font-family: "Source Sans Pro", Arial, sans-serif
+  font-size: 18px
+  font-weight: 600
+  color: #3a3f4b
+  &::before
+    content: ""
+    position: absolute
+    top: -90px
+    left: 50%
+    transform: translateX(-50%)
+    width: 80px
+    height: 80px
+    margin: 0 0 10px 0
+    font-size: 0
+    border-radius: 50%
+    background: url("../img/services/services-sprite.png") #f5f6f8 no-repeat
+
+.services--logo-design::before
+  background-position: 8px 8px
+
+.services--web-design::before
+  background-position: -61px 8px
+
+.services--branding::before
+  background-position: -125px 7px
+
+.services--illustrations::before
+  background-position: -186px 5px
+
+.services__subtitle::after
+  content: ""
+  position: absolute
+  bottom: -13px
+  left: 50%
+  transform: translateX(-50%)
+  width: 41px
+  height: 1px
+  background-color: #888888
+  text-align: center
+
+.services__description
+  text-align: center
+  font-size: 12px
+  line-height: 20px
+  font-weight: 300
+  color: #999999
